@@ -30,8 +30,8 @@ defmodule UniMux.Mixfile do
      {:exlager, github: "xerions/exlager"},
      {:exrun, github: "liveforeverx/exrun"},
      {:exrm, github: "thz/exrm", branch: "configurability", override: true},
-     {:coverex, "~> 1.4.1", only: :test}, 
-     {:meck, "~> 0.8.2", override: true, only: :test},
-     {:mock, github: "jjh42/mock", only: :test}]
+     {:coverex, "~> 1.4.1", only: :test},
+     {:meck, github: "eproxus/meck", tag: "0.8.3", override: true},
+     {:mock, github: "jjh42/mock"}]
   end
 end

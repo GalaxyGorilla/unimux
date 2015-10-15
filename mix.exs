@@ -3,7 +3,7 @@ defmodule UniMux.Mixfile do
 
   def project do
     [app: :unimux,
-     version: "0.2.4",
+     version: "0.5.0",
      elixir: "~> 1.0",
      test_coverage: [tool: Coverex.Task, coveralls: true],
      build_embedded: Mix.env == :prod,
@@ -29,7 +29,7 @@ defmodule UniMux.Mixfile do
      {:metricman, github: "xerions/metricman", branch: "master"}, 
      {:exlager, github: "xerions/exlager"},
      {:exrun, github: "liveforeverx/exrun"},
-     {:exrm, github: "xerions/exrm", override: true},
+     {:exrm, github: "xerions/exrm", override: true, branch: "new_master"},
      {:coverex, github: "alfert/coverex", tag: "v1.4.3", only: :test},
      {:meck, github: "eproxus/meck", tag: "0.8.3", override: true},
      {:mock, github: "jjh42/mock"}]

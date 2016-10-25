@@ -2,6 +2,9 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :logger,
+  backends: [],
+  handle_otp_reports: false
 
 config :unimux,
   routes: [{"APIPrefix", 'http://127.0.0.1:8080', 10000}],
